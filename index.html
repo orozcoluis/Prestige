@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- faremwork of css -->
+    <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+    <!-- style sheet of css        -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive sheet of css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- fonts awsome icon link            -->
+    <link rel="stylesheet" href="assets/font-awesome-lib/icon/font-awesome.min.css">
+    <!-- slick-slider link css -->
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <!-- animation of css -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <div class="first_nav_hero_about">
+            <!-- ======== 1.1. header section ======== -->
+            <header>
+                <nav class="container navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <!-- site logo -->
+                        <a class="nav-logo p-0" href="index.html"><img src="assets/images/Logo.png" alt="logo"></a>
+                                <!-- navigation button  -->
+                        <button class="navbar-toggle" onclick="openNav()" type="button"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <!-- navigation bar manu  -->
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul
+                                class="navbar-nav d-flex justify-content-center align-items-center gap-lg-2 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About us</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link " href="#">Pages <i
+                                            class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                        <li><a class="dropdown-item" href="team.html">Team</a></li>
+                                        <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                                        <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="search-bar-bt" class="nav-link" href="#">
+                                <li class="nav-item header_btn ">
+                                    <a class="nav-link nav-hrf btn-hover1" href="contact.html">Schedule Consultation</a>
+                                </li>
+                                <li class="nav-item" onclick="open_right_side()">
+                                    <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-bars"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!--============ navigation left slidebar================-->
+                <aside>
+                    <div id="mySidenav" class="sidenav">
+                        <div class="side-nav-logo d-flex justify-content-between align-items-center ps-4 pe-3">
+                            <figure class="navbar-brand"><a href="index.html"><img src="assets/images/Logo.png" alt="img"
+                                class="nav-logo"></a></figure>
+                            <div class="closebtn" onclick="closeNav()"><i
+                                    class="fa-solid fa-square-xmark side-bar-close-btn"></i></div>
+                        </div>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="feature.html">Feature</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="d-flex align-items-center justify-content-between pt-3" id="slid-btn">
+                                    <button class="a-slid">Pages</button>
+                                    <i class="fa-solid fa-caret-down pe-4"></i>
+                                </div>
+                                <ul id="slid-drop" class="myst">
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!--================== navigation drop search bar================-->
+                <div class="search" id="search-bar">
+                    <form class="d-flex nav-search">
+                        <input type="text" name="search" placeholder="Enter your text">
+                        <button class="btn-hover1" type="submit">Search</button>
+                    </form>
+                    <button id="remove-btn">
+                        <i class="fa-solid fa-square-xmark "></i>
+                    </button>
+                </div>
+                <!--=================navigation Right slidebar==================-->
+                <section class="right-sidbar" id="right_side">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- site logo -->
+                        <a class="p-0 " href="index.html"><img src="assets/images/Logo.png" alt="logo"></a>
+                        <button class="close_right_sidebar fa-solid fa-xmark" onclick="close_right_sade()"> </button>
+                    </div>
+                    <p class="mt-4 pb-3">Headquartered in Southern California and proudly serving clients nationwide 
+                        and internationally.
+                    </p>
+                    <p>Contact us today to start your credit repair journey and take the first step toward a stronger, 
+                        more successful financial future.</p>
+                        <br>
+
+                    <a href="#" class="btn-hover1">Discover More</a>
+                    <hr>
+                    <h5 class="mt-4 mb-4">Contact Details:</h5>
+                    <ul class="d-flex flex-column gap-3">
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                            <a href="#">yourname@email.com</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#">855-512-7334</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-clock"></i></a>
+                            <a href="#">Office Hours: 8AM - 11PM Sunday -
+                                Weekend Day</a>
+                        </li>
+                    </ul>
+                    <span class="d-flex gap-4 mt-4">
+                        <a href="#" class="p-0"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="p-0"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="p-0"><i class="fa-brands fa-twitter"></i></a>
+                    </span>
+                </section>
+            </header>
+            <!-- ======== End of 1.1. header section ========  -->
+            <!-- ======== 1.2. hero section ======== -->
+            <section class="hero">
+                <div class="container">
+                    <div class="row text-md-start text-sm-center text-center gap-md-0 gap-sm-4 gap-5" >
+                        <div  data-aos="fade-up" class="col-md-6 d-flex align-items-md-start align-items-ms-center align-items-center justify-content-center flex-column" >
+                            <h1>Prestige Financial Consultation</h1>
+                            <p>At Prestige Financial Consulting, our mission is to empower individuals and business owners to take full control of their financial future. 
+                                We specialize in repairing and rebuilding credit by removing inaccurate inquiries, eliminating negative accounts, and helping clients understand 
+                                their legal rights.</p>
+                            <a class="btn-hover1" href="about.html">About Us</a>
+                        </div>
+                        <div data-aos="fade-down" class="col-md-6 position-relative d-flex flex-column justify-content-center align-items-center mt-md-0 mt-sm-5 mt-4">
+                            <img src="assets/images/index/hero.png" alt="hero_img1" class="moving">
+                            <img src="assets/images/index/hero_watch.png" alt="hero_img2">
+                            <img src="assets/images/icon/hero_star.png" alt="hero_icon">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======== End of 1.2. hero section ========  -->
+            <!-- ======== 1.3. about section ========  -->
+            <section class="about">
+                <div class="container">
+                    <div class="row text-md-start text-sm-center text-center">
+                        <div class="col-md-6 d-flex justify-content-between">
+                            <div class="ab_card1"  data-aos="flip-left">
+                                <h3>About</h3>
+                                <p class="p-f-s">Beyond personal credit repair, we guide entrepreneurs in building strong 
+                                    business credit profiles and securing the funding they need to grow and scale 
+                                    their companies. Through expert advice, personalized strategies, and transparent 
+                                    support, we aim to restore confidence, unlock financial opportunities, and pave the 
+                                    way for long-term success.</p>
+                                <div
+                                    class="d-flex align-items-center justify-content-lg-start justify-content-md-center justify-content-center">
+                                    <a class="btn-hover1" href="about.html">Learn More</a>
+                                    <div class="abut-video">
+                                    </div>
+                                   <!--<div class="p-f-s w-v">Watch Video</div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-center mt-md-0 mt-sm-3 mt-3">
+                            <div class="ab_card2 d-flex flex-column justify-content-between" data-aos="flip-right">
+                                <div>
+                                    <div class="row gap-md-0 gap-sm-3 gap-3">
+                                        <div class="col-md-5 col-sm-12 col-12 ">
+                                            <div
+                                                class="d-flex justify-content-md-start justify-content-sm-center justify-content-center">
+                                                <h3 class="count">100</h3>
+                                                <h3>+</h3>
+                                            </div>
+                                            <p class="p-f-s">We have supported hundreds of clients with comprehensive financial solutions 
+                                                tailored to their needs.
+                                            </p>
+                                        </div>
+                                        <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+                                            <hr>
+                                        </div>
+                                        <div class="col-md-5 col-sm-12 col-12 p-0">
+                                            <h3>FREE!</h3>
+                                            <p class="p-f-s">No matter your financial needs, we provide a free 
+                                                consultation to get you started. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex mb-3 mt-4 gap-4 justify-content-md-start justify-content-ms-center justify-content-center">
+                                    <div class="position-relative">
+                                        <img src="assets/images/index/about_card_img1.jpg" alt="about_img1">
+                                        <img src="assets/images/index/about_card_img2.jpg" alt="about_img2">
+                                    </div>
+                                    <div class="ps-2">
+                                        <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p>We’ve earned the trust of countless clients through our reliable financial solutions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- ======== End of 1.3. about section ========  -->
+        <!-- ======== 1.4. finance section 1 ========  -->
+        <section class="finance pt-5 pb-5">
+            <div class="container text-center">
+                <h2>Your Financial Journey</h2>
+                <P class="mt-0">When you choose Prestige Financial Consulting, you’re not just hiring a credit 
+                    repair company — you’re partnering with a team that’s fully invested in your success. We’re here to educate, guide, 
+                    and support you on your journey to better credit, stronger finances, and a more secure future.</P>
+                <div class="finanes-card row gap-md-0 gap-sm-4 gap-4">
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                        <div class="fin-card" data-aos="flip-up">
+                            <figure><img src="assets/images/icon/graphe.png" alt="praph"></figure>
+                            <h4>Credit Repair & Restoration</h4>
+                            <p class="p-f-s">We work to remove inaccurate inquiries, outdated negative accounts, 
+                                collections, charge-offs, and other damaging items from your credit reports. Our 
+                                goal is to rebuild your credit profile and improve your scores so you can qualify 
+                                for better financial opportunities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                        <div class="fin-card" data-aos="flip-up">
+                            <figure> <img src="assets/images/icon/doller.png" alt="doller"></figure>
+                            <h4>Business Credit Building</h4>
+                            <p class="p-f-s">We help entrepreneurs establish and build strong business credit separate 
+                                from their personal credit. From setting up your business properly to developing a credit 
+                                profile that lenders trust, we guide you every step of the way.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center">
+                        <div class="fin-card" data-aos="flip-up">
+                            <figure><img src="assets/images/icon/arow.png" alt="arow"></figure>
+                            <h4>Credit Education & Legal Rights</h4>
+                            <p class="p-f-s">We don’t just fix credit — we teach you how credit works. Our team educates you 
+                                about your consumer rights under the Fair Credit Reporting Act (FCRA) and other laws, empowering 
+                                you to protect your financial future.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- ======== finance section part 2 ========  -->
+        <section class="finance pt-5 pb-5">
+            <div class="container text-center">
+                <div class="finanes-card row gap-md-0 gap-sm-4 gap-4">
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                        <div class="fin-card" data-aos="flip-up">
+                            <figure><img src="assets/images/icon/doller.png" alt="doller"></figure>
+                            <h4>Business Funding</h4>
+                            <p class="p-f-s">Whether you’re launching a new venture or scaling an existing business, we connect 
+                                you with funding opportunities and guide you through the application process. Our team helps you 
+                                position your business to qualify for lines of credit, loans, and other forms of financing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                        <div class="fin-card" data-aos="flip-up">
+                            <figure> <img src="assets/images/icon/arow.png" alt="arrow"></figure>
+                            <h4>Inquiry & Account Removal</h4>
+                            <p class="p-f-s">We specialize in removing hard inquiries, outdated accounts, and other negative marks 
+                                that may be holding your credit back — giving you a clean slate to move forward confidently.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center">
+                        <div class="fin-card" data-aos="flip-up">
+                            <figure><img src="assets/images/icon/graphe.png" alt="praph"></figure>
+                            <h4>Financial Growth Strategy</h4>
+                            <p class="p-f-s">Our consulting doesn’t stop at credit. We help you create customized plans for long-term 
+                                financial success, including steps to build wealth, maintain strong credit, and position yourself or your 
+                                business for future opportunities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- ======== end finance section part 1 and 2 ========  -->
+
+        <!-- ======== 1.5. ispsum section ========  -->
+        <div class="ispsum-logo">
+            <div class="container">
+                <hr>
+                <div class="logo_ispsum_slider">
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ipsum-11.png" alt="img"></figure>
+                    </a>
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ipsum-22.png" alt="img"></figure>
+                    </a>
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ipsum-11.png" alt="img"></figure>
+                    </a>
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ipsum-22.png" alt="img"></figure>
+                    </a>
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ipsum-11.png" alt="img"></figure>
+                    </a>
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ipsum-22.png" alt="img"></figure>
+                    </a>
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ipsum-11.png" alt="img"></figure>
+                    </a>
+                    <a href="#">
+                        <figure><img src="assets/images/icon/ipsum-22.png" alt="img"></figure>
+                    </a>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <!-- ======== End of 1.5. ispsum section ========  -->
+
+
+        <!-- ======== 1.6. gateway section ========  -->
+        <section class="gateway">
+            <div class="container">
+                <div class="row gap-lg-0 gap-md-0 gap-sm-4 gap-4">
+                    <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-up">
+                        <div class=" gateway-bg-img mt-5 ">
+                            <figure><img src="assets/images/index/gateway-1.png" alt="gate_img1" class="moving"></figure>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6  text-md-start text-sm-center text-center" data-aos="fade-down">
+                        <h2>Control Your Credit Today!</h2>
+                        <P class="pt-lg-4 pt-md-3 pt-sm-2 pt-2">Your journey to financial freedom starts today. Whether you’re trying
+                             to qualify for a mortgage, get approved for funding, start a business, or simply stop feeling held back by 
+                             bad credit — Prestige Financial Consulting is here to help you make it happen.</P>
+                             <p>We don’t just fix credit — we transform financial futures. With our proven strategies, dedicated support team, 
+                                and results-driven approach, you can start seeing real improvements within 30 days — and in many cases, even sooner.</p>
+                        <div
+                            class="gate mt-md-3 mt-sm-0 mt-4   d-flex flex-md-row flex-sm-column flex-column align-items-center">
+                            <figure class="d-flex align-items-center"><img src="assets/images/icon/gate-icon1.png"
+                                    alt="gate-img1"></figure>
+                            <div class="account-text ms-3">
+                                <h5 class="pb-2">Step 1:</h5>
+                                <p class="p-f-s">Schedule your free consultation — we’ll review your credit and discuss your goals.</p>
+                            </div>
+                        </div>
+                        <div class="gate d-flex mt-4  flex-md-row flex-sm-column flex-column align-items-center">
+                            <figure class="d-flex align-items-center"><img src="assets/images/icon/gate-icon2.png"
+                                    alt="gate-img2"></figure>
+                            <div class="ms-3">
+                                <h5 class="pb-2">Step 2:</h5>
+                                <p class="p-f-s">Choose the service package that fits your needs.</p>
+                            </div>
+                        </div>
+                        <div class="gate d-flex mt-4  flex-md-row flex-sm-column flex-column align-items-center">
+                            <figure class="d-flex align-items-center"><img src="assets/images/icon/gate-icon3.png"
+                                    alt="gate-img3"></figure>
+                            <div class="ms-3">
+                                <h5 class="pb-2">Step 3:</h5>
+                                <p class="p-f-s">Let our experts handle the work while you watch your credit and opportunities grow.</p>
+                            </div>
+                        </div>
+                        <div class="gate-link text-lg-start text-md-start text-sm-center text-center">
+                            <a class="btn-hover1" href="pricing.html">Pricing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.6. gateway section ========  -->
+        <!-- ======== 1.7. services section ========  -->
+        <!-- ======== End of 1.7. services section ========  -->
+        <!-- ======== 1.8. visa section ========  -->
+        <section class="visa">
+            <div class="container">
+                <div class="visa-contant" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <h3 class="text-md-start text-sm-center text-center">Financial Consulting
+                            </h3>
+                            <p class="text-md-start text-sm-center text-center p-f-s">At Prestige Financial Consulting, we don’t believe in one-size-fits-all credit repair. Every client’s financial situation is different — so our service packages are designed to meet you exactly where you are. Whether you’re working on removing a few negative items, rebuilding your credit from the ground up, or securing funding to grow your business, we’re here to guide you every step of the way.
+
+                                Each package includes professional credit analysis, customized dispute strategies, ongoing support, and expert guidance to help you reach your financial goals with confidence.</p>
+                            <p class="text-md-start text-sm-center text-center p-f-s"> Get Started Today! – Contact us now to schedule your consultation and take the first step toward a stronger, more secure financial future.</p>
+                            <div class="visa-btn text-sm-center text-md-start text-center">
+                                <a class="btn-hover1" href="contact.html">Try Our Path Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="visa-logo d-flex justify-content-between align-items-center pt-2 pb-3">
+                                <figure><img src="assets/images/icon/vis-1.png" alt="vica-icon1"> </figure>
+                                <figure><img src="assets/images/icon/ves-2.png" alt="vica-icon2"></figure>
+                                <figure><img src="assets/images/icon/ves-3.png" alt="vica-icon3"></figure>
+                                <figure><img src="assets/images/icon/ves-4.png" alt="vica-icon4"></figure>
+                                <figure><img src="assets/images/icon/ves-5.png" alt="vica-icon5"></figure>
+                            </div>
+                            <div class="d-flex pt-2 justify-content-md-start justify-content-center justify-content-center">
+                                <h2 class="count">720</h2>
+                                <h2>+</h2>
+                                
+                            </div>
+                            <p class="pt-2 pb-3 text-md-start text-sm-center text-center p-f-s">Boost Your Credit Score!!</p>
+                            <div class="visa-card position-relative mt-3">
+                                <img src="assets/images/index/Card.png" alt="visa-card">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.8. visa section ========  -->
+
+        <!-- ======== 1.10. profaessional section ========  -->
+        <section class="profaessional">
+            <div class="container">
+                <h2 class="text-center">Trusted By Professionals</h2>
+                <P class="text-center pt-3 pb-5 mb-2">At Prestige Financial Consulting, nothing means more to us than the success of 
+                    our clients. We’re proud to have helped countless individuals and business owners repair their credit, achieve 
+                    financial milestones, and take control of their futures. Here’s what some of them had to say:</P>
+                <div class="prof-size"  data-aos="zoom-in-up">
+                    <div class="prof-slider ">
+                        <div class="prof-slide position-relative">
+                            <div>
+                                <div>
+                                    <img src="assets/images/slider/Comma.png" alt="img" class="prof-img-1">
+                                </div>
+                                <p class="text-center p-f-s">“I was struggling with a low credit score and multiple 
+                                    collections holding me back. Within just a few weeks of working with Prestige, 
+                                    my score increased over 120 points, and I was approved for a new car loan. Highly
+                                     recommend their services!”</p>
+                                <div class="prof-star pt-2 pb-2 text-center">
+                                    <span class="stars text-lg-start">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </div>
+                                <h5 class="text-center">Maria G.</h5>
+                                <p class="text-center pt-2 pb-5 p-f-s">Los Angeles, CA</p>
+                            </div>
+                        </div>
+                        <div class="prof-slide position-relative">
+                            <div>
+                                
+                                <div>
+                                    <img src="assets/images/slider/Comma.png" alt="img" class="prof-img-1">
+                                </div>
+                                <p class="text-center p-f-s">“Not only did they fix my credit, but they also 
+                                    helped me establish business credit and guided me through the funding process. 
+                                    Thanks to Prestige, I was able to secure my first $50,000 business loan.”</p>
+                                <div class="prof-star pt-2 pb-2 text-center">
+                                    <span class="stars text-lg-start">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </div>
+                                <h5 class="text-center">James T</h5>
+                                <p class="text-center pt-2 pb-5 p-f-s">Dallas, TX</p>
+                            </div>
+                        </div>
+                        <div class="prof-slide position-relative">
+                            <div>
+                                
+                                <div>
+                                    <img src="assets/images/slider/Comma.png" alt="img" class="prof-img-1">
+                                </div>
+                                <p class="text-center p-f-s">“After years of being denied for mortgages, Prestige Financial Consulting helped me clean up my credit and improve my score. Just six months later, I closed on my first home. This team truly changed my life.”</p>
+                                <div class="prof-star pt-2 pb-2 text-center">
+                                    <span class="stars text-lg-start">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </div>
+                                <h5 class="text-center">Alejandra R</h5>
+                                <p class="text-center pt-2 pb-5 p-f-s">Phoenix, AZ </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.10. profaessional section ========  -->
+        <!-- ======== 1.11. question section ========  -->
+        <section class="question">
+            <div class="container">
+                <div class="row">
+                    <div class="question-text col-lg-6 col-md-6 tab-center" data-aos="fade-up">
+                        <h2 class="text-lg-start text-md-start text-sm-center text-center">FREQUENTLY ASKED
+                            QUESTIONS
+                        </h2>
+                        <P class="text-lg-start text-md-start text-sm-center text-center mt-md-3 mt-3">We don’t just repair credit — 
+                            we help you build a roadmap for future financial success, so you can qualify for better loans, credit lines, 
+                            and investment opportunities.
+                        </P>
+                        <div class="text-lg-start text-md-start text-sm-center text-center ">
+                            <a class="btn-hover1" href="faq.html">More FAQs</a>
+                        </div>
+                    </div>
+                    <div class="question-collapes col-lg-6 col-md-6 mt-md-0 mt-sm-3 mt-3" data-aos="zoom-in">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      How long does the credit repair process take?
+                                    </button>
+                                </h5>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p> Every situation is unique, but most of our clients begin seeing results within 30 days --
+                                            and some see improvements in as little as 15 days. The exact timeline depends on the number 
+                                            of negative items on your report and how quickly the credit bureaus respond, but our team works 
+                                            diligently to deliver fast, effective results.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                         Will this work if I live outside Southern California?
+                                    </button>
+                                </h5>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p> ✅ Absolutely.While our headquarters are based in Southern California, we proudly 
+                                            serve clients nationwide. All consultations, disputes, and credit services can be 
+                                            handled remotely, so no matter where you’re located in the U.S., we can help you 
+                                            improve your credit and achieve your financial goals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        What types of negative itmes can be removed?
+                                    </button>
+                                </h5>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>We specialize in disputing and removing a wide range of inaccurate, outdated, or unverifiable items, including:
+                                        </p>
+                                        <ul>
+                                            <li><strong>Collections & charge-offs</strong></li>
+                                            <li><strong>Late payments</strong></li>
+                                            <li><strong>Hard inquiries</strong></li>
+                                            <li><strong>Repossessions & evictions</strong></li>
+                                            <li><strong>Child support delinquencies</strong></li>
+                                            <li><strong>Bankruptcies & judgments (when applicable)</strong></li>
+                                            <li><strong>Accounts that don’t belong to you</strong></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                         Will credit repair improve my score instanly?
+                                    </button>
+                                </h5>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>While credit repair isn’t instant, many clients start noticing improvements 
+                                            within 30 days — and some even sooner. Results vary based on your specific 
+                                            situation, but our proven strategies are designed to deliver noticeable score 
+                                            increases as quickly as possible.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.11. question section ========  -->
+        <!-- ======== 1.12. news-cards section ========  -->
+
+        <!-- ======== End of 1.12. news-cards section ========  -->
+        <!-- ======== 1.13. footer section ========  -->
+        <footer class="position-relative">
+            <div class="container">
+              
+                    <!-- form Subscribe massage -->
+                  
+                </form>
+                <div class="footer-logo text-center pb-lg-4 pb-md-3 pb-sm-2 pb-4">
+                    <!-- footer logo  -->
+                    <a href="index.html">
+                        <figure><img src="assets/images/Logo.png" alt="img"></figure>
+                    </a>
+                </div>
+                <ul class="d-flex align-items-center justify-content-center">
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">Faq</a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="row footer-nav-icon">
+                    <!-- footer social icon  -->
+                    <div class="col-lg-3 col-md-3 d-flex align-items-center justify-content-md-start justify-content-sm-center justify-content-center">
+                        <div
+                            class="social-icon d-flex gap-2 justify-content-md-start justify-content-sm-center justify-content-center">
+                            <a href="#"> <i class="fa-brands fa-facebook-f foot-facebook"></i></a>
+                            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <!-- footer terms privacy  -->
+                    <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+                        <div class=" d-flex gap-3 p-2">
+                            <a href="#">Terms & Condition</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <!-- footer logo slider  -->
+                    <div class="col-lg-3 col-md-3">
+                        <div class="footer_ispsum_slider">
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-228.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-233.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-229.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-228.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-233.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-229.png" alt="qr-code"></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                </div>
+        </footer>
+        <!-- ======== End of 1.13. footer section ========  -->
+    </div>
+    <!-- end site wrapper -->
+    <!-- button back to top -->
+    <button onclick="scrollToTop()" id="backToTopBtn"><i class="fa-solid fa-arrow-turn-up"></i></button>
+
+    <!-- bootstrap min javascript -->
+    <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+    <!-- j Query -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- slick slider js -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- main javascript -->
+    <script src="assets/js/custom.js"></script>
+    <!-- counter javascript file -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- animation from javascript -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+      </script>
+</body>
+
+</html>
